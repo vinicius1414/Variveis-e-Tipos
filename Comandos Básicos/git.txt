@@ -1,0 +1,223 @@
+# Estrutura de Dados:
+
+Javascript é uma linguagem de tipagem dinâmica! ou seja, não é preciso especificar
+o tipo da variável antes de declarar. EXEMPLO:
+
+let um = "um";
+// 'um' é uma String, pois está entre aspas
+
+um = 1;
+// um deixa de ser uma String, e se torna um Int, e não há problemas nisso, pois
+em javascript é possível alterar o tipo da variável ao atribuir um novo valor para ela.
+
+
+--------------------------------------------------------
+
+# Tipos de dados em Javacript:
+
+Tipos primitivos: numbers; Strings; boolean; null; undefined.
+
+Tipos não-primitivos: objects; arrays.
+
+## Strings (métodos):
+
+1 - Comumente utilizada para textos.
+2 - Valor atribuido entre aspas ou crase.
+
+
+--------------------------------------------------------
+
+Concatenar Strings:
+
+usamos o método nomeDaString.concat(outraString);. EXEMPLO:
+
+let nome = "Vinicius";
+let sobrenome = "da Silva";
+let concatenarNome = nome.concat(sobrenome);
+// Resultado: "Vinicius da Silva"
+
+EXEMPLO 2:
+
+concatenarNome = ${nome} ${sobrenome};
+// Resultado: "Vinicius da Silva"
+
+--------------------------------------------------------
+
+Tamanho da String:
+
+Assim como no Java, usamos o método length();. EXEMPLO:
+
+let nome = "Vinicius";
+console.log(nome.length);
+// Resultado: 8 (pois o a let nome tem 8 caracteres)
+
+
+--------------------------------------------------------
+
+String como objeto:
+
+let exemplo1 = "blablabla";
+// String normal
+let exemplo = new String ("blablabla");
+// objeto, pois usamos o código 'new String'
+
+--------------------------------------------------------
+
+Quebra de linha:
+
+usamos, entre aspas o "/n", como em java. EXEMPLO:
+
+console.log("Hello /n world);
+// Resultado: Hello
+//            world
+
+--------------------------------------------------------
+
+## Método includes():
+
+Verifica se um ou mais caractéres estão dentro de uma String. EXEMPLO:
+
+let frase = "Hello world!";
+console.log (frase.includes("world"));
+// Resultado: true (pois o a let frase possui a palavra world)
+
+
+--------------------------------------------------------
+
+## Split():
+
+Separa uma String. EXEMPLO:
+
+let frase = "Hello world!";
+console.log (frase.split(" "));
+// Resultado: (2) ["Hello", "world!"] 
+
+
+--------------------------------------------------------
+
+## Método startsWith()/endsWith():
+
+Verifica se uma String começa/termina com o caráctere especificado no método. EXEMPLO:
+
+let frase = "Hello world!";
+console.log (frase.startsWith("H"));
+// Resultado: true (a let frase começa com H, portanto, o retorno será true
+console.log (frase.EndsWith("!"));
+// Resultado: true (a let termina começa com !, portanto, o retorno será true
+
+
+--------------------------------------------------------
+
+# Numbers:
+
+## Arredondar uma divisão (para baixo):
+
+let fiveByThree = 5 / 3;
+math.floor(fiveByThree);
+// Resultado: 1
+
+## Arredondar uma divisão (para cima):
+let fiveByThree = 5 / 3;
+math.ceil(fiveByThree);
+// Resultado: 2
+
+
+--------------------------------------------------------
+
+## Converter Number para String:
+
+Usamos o métodos toString(). EXEMPLO:
+
+let percent = 10;
+// percent é um Number
+
+percent.toString();
+// percent deixa de ser um Number, a passa a ser uma String
+
+
+--------------------------------------------------------
+
+# Booleans:
+
+let validation = 3 > 4;
+// Resultado: false (a let validação é igual a 3, logo em seguida, será perguntado validation maior que 4, por isso, o valor final de validation é false
+
+validation = 3 === 3;
+// Resultado: true (agora, será perguntado se let é igual a 3, por isso o resultado será true.
+
+validation = !validation
+// Resultado: false (será false, pois o sinal de exclamação antes de validation indica que queremos o oposto da variável que vem em seguida da variável)
+
+
+--------------------------------------------------------
+
+# Array:
+
+## Criar array e adicionar/eliminar elementos:
+
+
+let arr = [];
+// declaração da Array
+arr.push(4);
+// Adiciona um elemento no final da Array
+arr.pop();
+// remove um elemento do final da Array
+arr.unshift(5);
+// Adiciona um elemento no começo da Array
+
+--------------------------------------------------------
+
+# Objetos:
+
+## Declaração:
+
+
+let person = {
+	name: "John",
+	age: 20
+	// name e age são chamadas de 'Keys', pois são chaves que possuem um valor.
+}
+
+
+--------------------------------------------------------
+
+## Adicionando uma nova chave:
+
+let obj = {}
+
+obj.name = "Julia";
+// o objeto obj passa a ter uma nova chave, chamada name, que armazena o valor 'Julia'
+
+obj["name"] = "Julia";
+// Faz a mesma coisa que o código anterior! Uma nova chave é adicionada ao objeto obj, com o valor 'Julia'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+
+
+
+
+
